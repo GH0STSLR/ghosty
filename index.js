@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.static(path.join(__dirname,`/public`)));
 
 app.get('/', function(req, res) {
-  res.sendFile('/views/index.html');
+  res.sendFile(path.join(__dirname,'views','index.html'));
   // res.status(200).send("HEloo form the server!!");
 });
 
@@ -22,7 +22,7 @@ app.get('/api/hello', function(req, res) {
   res.json({ greeting: 'hello API' });
 });
 
-app.listen(port, function() {
+app.listen(8080 || process.env.PORT, function() {
   console.log(`Listening on port ${port}`);
 });
 const uri = 'mongodb+srv://saeedomar054:CE1sXb1U3pRJHjJF@cluster0.qmotlx7.mongodb.net/db1?retryWrites=true&w=majority&appName=Cluster0';
