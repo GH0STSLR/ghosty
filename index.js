@@ -13,8 +13,8 @@ app.use(cors());
 app.use(express.static(path.join(__dirname,`/public`)));
 
 app.get('/', function(req, res) {
-  res.sendFile(process.cwd() + '/views/index.html');
-  res.status(200).send("HEloo form the server!!");
+  res.sendFile('/views/index.html');
+  // res.status(200).send("HEloo form the server!!");
 });
 
 // Your first API endpoint
