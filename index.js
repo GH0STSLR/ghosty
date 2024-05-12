@@ -6,7 +6,7 @@ const path=require('path');
 const bodyParser = require('body-parser');
 
 // Basic Configuration
-const port =  3000;
+const port =  8000;
 
 app.use(cors());
 
@@ -14,6 +14,7 @@ app.use(express.static(path.join(__dirname,`/public`)));
 
 app.get('/', function(req, res) {
   res.sendFile(process.cwd() + '/views/index.html');
+  res.status(200).send("HEloo form the server!!");
 });
 
 // Your first API endpoint
