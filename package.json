@@ -4,7 +4,8 @@
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "git": "^0.1.5",
-    "mongoose": "^6.10.0"
+    "mongoose": "^6.10.0",
+    "path": "^0.12.7"
   },
   "name": "ghostly",
   "version": "~1.0.0",

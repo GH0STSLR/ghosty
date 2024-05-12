@@ -2,6 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const app = express();
 const mongoose = require('mongoose');
+const path=require('path');
 const bodyParser = require('body-parser');
 
 // Basic Configuration
@@ -9,7 +10,7 @@ const port =  3000;
 
 app.use(cors());
 
-app.use('/', express.static(`/public`));
+app.use(express.static(path.join(__dirname,`/public`)));
 
 app.get('/', function(req, res) {
   res.sendFile(process.cwd() + '/views/index.html');
