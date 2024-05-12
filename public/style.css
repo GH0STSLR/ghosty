@@ -1,6 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{font-size: 16px;
+    font-family: "Rubik",sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
 body{
-    background-color:red;
+    background: rgb(131,58,180);
+
+    background: linear-gradient(90deg, rgba(131,58,180,1) 24%, rgba(175,62,129,1) 48%, rgba(253,68,40,1) 57%, rgba(253,29,29,1) 85%, rgba(253,29,29,1) 94%, rgba(252,176,69,1) 100%);
+
 }
 input{
-    margin:50px;
+    margin:auto;
 }
+#center{
+    
+    align-items: center;
+    padding:20px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+   
+  }
+  input{
+    border-radius: 15px 15px 15px 0;
+    border:none;
+
+    padding:5px;
+  }
+  fieldset{
+    border-radius:12px;
+    padding:100px 150px 100px 150px;
+    margin :70px;
+    background: rgba(100, 51, 133, 0.801) ;
+    
+  }
+  footer{
+    display: block;
+    width: 100%;
+    justify-content: center;
+    text-align:center;
+  }
+
