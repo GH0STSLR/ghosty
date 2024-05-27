@@ -12,6 +12,10 @@ body{
     background: linear-gradient(90deg, rgba(131,58,180,1) 24%, rgba(175,62,129,1) 48%, rgba(253,68,40,1) 57%, rgba(253,29,29,1) 85%, rgba(253,29,29,1) 94%, rgba(252,176,69,1) 100%);
 
 }
+h3{
+  font-size: 50px;
+  letter-spacing: 10px;
+}
 input{
     margin:auto;
 }
@@ -19,7 +23,7 @@ input{
     
     align-items: center;
     padding:20px;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
    
@@ -32,8 +36,10 @@ input{
   }
   fieldset{
     border-radius:12px;
+    height: 100%;
+    width: 100%;
     padding:100px 150px 100px 150px;
-    margin :70px;
+    margin :90px;
     background: rgba(100, 51, 133, 0.801) ;
     
   }
@@ -43,4 +49,4 @@ input{
     justify-content: center;
     text-align:center;
   }
-
+ 
